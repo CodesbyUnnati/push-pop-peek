@@ -1,0 +1,124 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#define MAX 3
+int st[MAX],top=-1;
+void push(int st[max],int value);
+void pop(int st[max]);
+void display(int st[max]);
+int peek(int st[max]);
+int main(intargc,char *argc[])
+{
+int value,option;
+do
+{
+printf("\n****Main Menu****");
+printf("\n1.PUSH");
+printf("\n2.POP");
+printf("\nPEEP");
+printf("\nDISPLAY");
+printf("EXIT");
+printf("\n ENTER YOUR OPTION");
+scanf("%d",&option);
+switch(option)
+{
+case 1:
+printf("\nenter your number");
+scanf("%d",&value);
+push(st,value);
+break;
+case 2:
+if(value!=-1)
+printf("\nStack is empty");
+value=pop(st);
+break;
+case 3:
+if(top==-1)
+{
+printf("\nempty stack");
+}value=peek(st);
+break;
+case 4:
+display(st);
+break;
+}
+while(option!=5)
+return 0;
+}
+void push(int st[],int value)
+{
+if(top=MAX-1)
+printf("\nOVERFLOW");
+else 
+{
+top++;
+st[top]=value;
+}
+}
+void pop(st[])
+{
+if (top==-1)
+{
+printf("\nunderflow");
+else
+val=st[top];
+top--;
+return val;
+}
+void peep(st[])
+{
+if (top==-1)
+{
+printf("\nempty");
+}
+else
+{
+return st[top];
+}
+}
+void display(st[top)
+{
+if (top==NULL)
+{
+printf("\n empty");
+}
+else
+for(i=front;i<=0;i++)
+printf("%d",st[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
